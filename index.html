@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width" />
+    <title>Cash Flow Minimizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Cash Flow Minimizer</h2>
+    <div class="container">
+      <h1 id="friends"></h1>
+      <div class="whogavewhom-container">
+        <div>
+          <h4>Receiver and Sender</h4>
+          <p id="pi-to-pj" class="pi-to-pj"></p>
+          <ul id="list1" class="list1">
+            <li class="wtw"></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Amount</h4>
+          <p id="amt" class="amt"></p>
+          <ul id="list2" class="list2">
+            <li class="amt"></li>
+          </ul>
+        </div>
+      </div>
+      <h4>
+        Type these numbers assigned to each name in sender and receiver section
+      </h4>
+      <ul id="list3" class="list3">
+        <li class="numwithnames"></li>
+      </ul>
+      <h3>Fill these boxes!</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="number">Enter N : </label>
+          <input type="number" id="num" placeholder="Number of people..." />
+        </div>
+        <button type="button" class="enter" onclick="getInputValue()">
+          Enter
+        </button>
+        <div class="form-control">
+          <label for="names">Add Names:</label>
+          <input type="text" id="Names" placeholder="Name..." />
+        </div>
+        <button type="button" class="enter" onclick="newElement()">Add</button>
+        <div class="form-control">
+          <label for="whotowhom">Receiver :</label>
+          <input type="number" id="who" placeholder="Receiver's Number..." />
+          <label for="whotowhom">Sender :</label>
+          <input type="number" id="towhom" placeholder="Sender's Number..." />
+          <label for="Amount">Amount :</label>
+          <input type="number" id="amount" placeholder="Amount..." />
+        </div>
+        <button type="button" class="enter" onclick="addMore()">Add</button>
+        <button type="button" class="submit" onclick="findSol()">
+          Submit All
+        </button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
